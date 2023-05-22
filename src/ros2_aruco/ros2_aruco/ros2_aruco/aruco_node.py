@@ -47,8 +47,8 @@ class ArucoNode(rclpy.node.Node):
         super().__init__('aruco_node')
 
         # Declare and read parameters
-        self.declare_parameter("marker_size", 0.1) #.0625
-        self.declare_parameter("aruco_dictionary_id", "DICT_5X5_250")
+        self.declare_parameter("marker_size", 0.07) #.0625
+        self.declare_parameter("aruco_dictionary_id", "DICT_4X4_1000")
         self.declare_parameter("image_topic", "/camera/image_raw")
         self.declare_parameter("camera_info_topic", "/camera/camera_info")
         self.declare_parameter("camera_frame", "camera")

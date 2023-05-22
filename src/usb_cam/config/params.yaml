@@ -8,7 +8,7 @@
       image_width: 800 #1280 #800 #640
       image_height: 448 #720 #448 #480
       camera_name: "logi_camera"
-      camera_info_url: "" #"package://usb_cam/config/camera_info.yaml"
+      camera_info_url: "package://usb_cam/config/ost.yaml" #"package://usb_cam/config/camera_info.yaml"
       brightness: -1
       contrast: -1
       saturation: -1
