@@ -63,7 +63,7 @@ class ArucoNode(rclpy.node.Node):
         # Make sure we have a valid dictionary id:
         try:
             dictionary_id = cv2.aruco.__getattribute__(dictionary_id_name)
-            if type(dictionary_id) != type(cv2.aruco.DICT_5X5_100):
+            if type(dictionary_id) != type(cv2.aruco.DICT_4X4_1000):
                 raise AttributeError
         except AttributeError:
             self.get_logger().error("bad aruco_dictionary_id: {}".format(dictionary_id_name))
