@@ -17,6 +17,14 @@ def generate_launch_description():
         parameters = [aruco_params]
     )
 
+    tf2_ros_node = Node(
+        package = 'tf2_ros',
+        executable="static_transform_publisher",
+        arguments=["0","0","0.1","0","0","0","map","camera"],
+        output="screen"
+    )
+
     return LaunchDescription([
-        aruco_node
+        aruco_node,
+        tf2_ros_node
     ])
